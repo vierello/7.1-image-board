@@ -45,3 +45,34 @@ img {
   font-size: 0px;
   vertical-align: middle;
 }
+
+.new-image-form {
+  height: 250px;
+  border: 2px solid black;
+}
+
+.image-url {
+  width: 99%;
+  margin-top: 50px;
+}
+.image-caption {
+  width: 99%;
+  margin-top: 20px;
+}
+
+.cancel-button,
+.new-button {
+  margin: 10px 0 0 10px;
+  float: right;
+  border: none;
+  height: 40px;
+  width: 100px;
+}
+
+.cancel-button {
+  background-color: gray;
+}
+
+.cancel-button:hover {
+  background-color: gray;
+}

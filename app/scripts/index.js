@@ -6,7 +6,11 @@ var ReactDOM = require('react-dom');
 var models = require('./models/image.js');
 var AppComponent = require('./components/form.jsx').AppComponent;
 
-ReactDOM.render(
-  React.createElement(AppComponent),
-  $('.container')[0]
-);
+var pictureCollection = new models.PictureCollection();
+
+pictureCollection.fetch().done(function(){
+  ReactDOM.render(
+    React.createElement(AppComponent, {pictures: pictureCollection}),
+    $('.container-fluid')[0]
+  );
+});
